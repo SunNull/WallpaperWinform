@@ -409,7 +409,7 @@ namespace Wallpaper
                 //string regPath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";//注册表
                 string regPath = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";//注册表
                 string path = Application.ExecutablePath.ToLower(); //获取.exe当前程序路径
-                //MessageBox.Show(path);
+                //MessageBox.Show(path); 
                 string name = Path.GetFileName(path);  //获得应用程序名称
                 //MessageBox.Show(name);
                 var regKey = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(regPath, true);
