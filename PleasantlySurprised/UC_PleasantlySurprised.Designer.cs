@@ -33,27 +33,28 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_PleasantlySurprised));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_PleasantlySurprised));
             this.riqi = new CCWin.SkinControl.SkinLabel();
             this.dtpStarDate = new CCWin.SkinControl.SkinDateTimePicker();
             this.dtiEndDate = new CCWin.SkinControl.SkinDateTimePicker();
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.btnSearch = new CCWin.SkinControl.SkinButton();
             this.dgvContent = new CCWin.SkinControl.SkinDataGridView();
-            this.skinMenuStrip1 = new CCWin.SkinControl.SkinMenuStrip();
-            this.btnNew = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnUpdate = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.clID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clCreateDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clWather = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clContent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clUserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaryContentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.skinMenuStrip1 = new CCWin.SkinControl.SkinMenuStrip();
+            this.btnNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnUpdatePassword = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContent)).BeginInit();
-            this.skinMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.diaryContentBindingSource)).BeginInit();
+            this.skinMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // riqi
@@ -179,72 +180,6 @@
             this.dgvContent.TitleBackColorBegin = System.Drawing.Color.White;
             this.dgvContent.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
             // 
-            // skinMenuStrip1
-            // 
-            this.skinMenuStrip1.Arrow = System.Drawing.Color.Black;
-            this.skinMenuStrip1.Back = System.Drawing.Color.White;
-            this.skinMenuStrip1.BackRadius = 4;
-            this.skinMenuStrip1.BackRectangle = new System.Drawing.Rectangle(10, 10, 10, 10);
-            this.skinMenuStrip1.Base = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(200)))), ((int)(((byte)(254)))));
-            this.skinMenuStrip1.BaseFore = System.Drawing.Color.Black;
-            this.skinMenuStrip1.BaseForeAnamorphosis = false;
-            this.skinMenuStrip1.BaseForeAnamorphosisBorder = 4;
-            this.skinMenuStrip1.BaseForeAnamorphosisColor = System.Drawing.Color.White;
-            this.skinMenuStrip1.BaseHoverFore = System.Drawing.Color.White;
-            this.skinMenuStrip1.BaseItemAnamorphosis = true;
-            this.skinMenuStrip1.BaseItemBorder = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
-            this.skinMenuStrip1.BaseItemBorderShow = true;
-            this.skinMenuStrip1.BaseItemDown = ((System.Drawing.Image)(resources.GetObject("skinMenuStrip1.BaseItemDown")));
-            this.skinMenuStrip1.BaseItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
-            this.skinMenuStrip1.BaseItemMouse = ((System.Drawing.Image)(resources.GetObject("skinMenuStrip1.BaseItemMouse")));
-            this.skinMenuStrip1.BaseItemPressed = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
-            this.skinMenuStrip1.BaseItemRadius = 4;
-            this.skinMenuStrip1.BaseItemRadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinMenuStrip1.BaseItemSplitter = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
-            this.skinMenuStrip1.DropDownImageSeparator = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.skinMenuStrip1.Fore = System.Drawing.Color.Black;
-            this.skinMenuStrip1.HoverFore = System.Drawing.Color.White;
-            this.skinMenuStrip1.ItemAnamorphosis = true;
-            this.skinMenuStrip1.ItemBorder = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
-            this.skinMenuStrip1.ItemBorderShow = true;
-            this.skinMenuStrip1.ItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
-            this.skinMenuStrip1.ItemPressed = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
-            this.skinMenuStrip1.ItemRadius = 4;
-            this.skinMenuStrip1.ItemRadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnNew,
-            this.btnUpdate,
-            this.btnDelete});
-            this.skinMenuStrip1.Location = new System.Drawing.Point(4, 28);
-            this.skinMenuStrip1.Name = "skinMenuStrip1";
-            this.skinMenuStrip1.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinMenuStrip1.Size = new System.Drawing.Size(482, 25);
-            this.skinMenuStrip1.SkinAllColor = true;
-            this.skinMenuStrip1.TabIndex = 4;
-            this.skinMenuStrip1.Text = "skinMenuStrip1";
-            this.skinMenuStrip1.TitleAnamorphosis = true;
-            this.skinMenuStrip1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
-            this.skinMenuStrip1.TitleRadius = 4;
-            this.skinMenuStrip1.TitleRadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            // 
-            // btnNew
-            // 
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(68, 21);
-            this.btnNew.Text = "新建日记";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(68, 21);
-            this.btnUpdate.Text = "修改日记";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(68, 21);
-            this.btnDelete.Text = "删除日记";
-            // 
             // clID
             // 
             this.clID.DataPropertyName = "ID";
@@ -291,11 +226,87 @@
             // 
             this.diaryContentBindingSource.DataSource = typeof(Wallpaper.DataEntity.DiaryContent);
             // 
+            // skinMenuStrip1
+            // 
+            this.skinMenuStrip1.Arrow = System.Drawing.Color.Black;
+            this.skinMenuStrip1.Back = System.Drawing.Color.White;
+            this.skinMenuStrip1.BackRadius = 4;
+            this.skinMenuStrip1.BackRectangle = new System.Drawing.Rectangle(10, 10, 10, 10);
+            this.skinMenuStrip1.Base = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(200)))), ((int)(((byte)(254)))));
+            this.skinMenuStrip1.BaseFore = System.Drawing.Color.Black;
+            this.skinMenuStrip1.BaseForeAnamorphosis = false;
+            this.skinMenuStrip1.BaseForeAnamorphosisBorder = 4;
+            this.skinMenuStrip1.BaseForeAnamorphosisColor = System.Drawing.Color.White;
+            this.skinMenuStrip1.BaseHoverFore = System.Drawing.Color.White;
+            this.skinMenuStrip1.BaseItemAnamorphosis = true;
+            this.skinMenuStrip1.BaseItemBorder = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.skinMenuStrip1.BaseItemBorderShow = true;
+            this.skinMenuStrip1.BaseItemDown = ((System.Drawing.Image)(resources.GetObject("skinMenuStrip1.BaseItemDown")));
+            this.skinMenuStrip1.BaseItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.skinMenuStrip1.BaseItemMouse = ((System.Drawing.Image)(resources.GetObject("skinMenuStrip1.BaseItemMouse")));
+            this.skinMenuStrip1.BaseItemPressed = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.skinMenuStrip1.BaseItemRadius = 4;
+            this.skinMenuStrip1.BaseItemRadiusStyle = CCWin.SkinClass.RoundStyle.All;
+            this.skinMenuStrip1.BaseItemSplitter = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.skinMenuStrip1.DropDownImageSeparator = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.skinMenuStrip1.Fore = System.Drawing.Color.Black;
+            this.skinMenuStrip1.HoverFore = System.Drawing.Color.White;
+            this.skinMenuStrip1.ItemAnamorphosis = true;
+            this.skinMenuStrip1.ItemBorder = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.skinMenuStrip1.ItemBorderShow = true;
+            this.skinMenuStrip1.ItemHover = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.skinMenuStrip1.ItemPressed = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
+            this.skinMenuStrip1.ItemRadius = 4;
+            this.skinMenuStrip1.ItemRadiusStyle = CCWin.SkinClass.RoundStyle.All;
+            this.skinMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnNew,
+            this.btnUpdate,
+            this.btnDelete,
+            this.btnUpdatePassword});
+            this.skinMenuStrip1.Location = new System.Drawing.Point(4, 28);
+            this.skinMenuStrip1.Name = "skinMenuStrip1";
+            this.skinMenuStrip1.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
+            this.skinMenuStrip1.Size = new System.Drawing.Size(475, 24);
+            this.skinMenuStrip1.SkinAllColor = true;
+            this.skinMenuStrip1.TabIndex = 4;
+            this.skinMenuStrip1.Text = "skinMenuStrip1";
+            this.skinMenuStrip1.TitleAnamorphosis = true;
+            this.skinMenuStrip1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
+            this.skinMenuStrip1.TitleRadius = 4;
+            this.skinMenuStrip1.TitleRadiusStyle = CCWin.SkinClass.RoundStyle.All;
+            // 
+            // btnNew
+            // 
+            this.btnNew.Image = global::Wallpaper.Properties.Resources.新建;
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(28, 20);
+            this.btnNew.ToolTipText = "新建";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Image = global::Wallpaper.Properties.Resources.编辑;
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(28, 20);
+            this.btnUpdate.ToolTipText = "修改日记";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Image = global::Wallpaper.Properties.Resources.删_除;
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(28, 20);
+            this.btnDelete.ToolTipText = "删除日记";
+            // 
+            // btnUpdatePassword
+            // 
+            this.btnUpdatePassword.Image = global::Wallpaper.Properties.Resources.密码修改;
+            this.btnUpdatePassword.Name = "btnUpdatePassword";
+            this.btnUpdatePassword.Size = new System.Drawing.Size(28, 20);
+            // 
             // UC_PleasantlySurprised
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 399);
+            this.ClientSize = new System.Drawing.Size(483, 399);
             this.Controls.Add(this.dgvContent);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.dtiEndDate);
@@ -308,9 +319,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "惊喜界面";
             ((System.ComponentModel.ISupportInitialize)(this.dgvContent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diaryContentBindingSource)).EndInit();
             this.skinMenuStrip1.ResumeLayout(false);
             this.skinMenuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.diaryContentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,5 +345,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clWather;
         private System.Windows.Forms.DataGridViewTextBoxColumn clContent;
         private System.Windows.Forms.DataGridViewTextBoxColumn clUserID;
+        private System.Windows.Forms.ToolStripMenuItem btnUpdatePassword;
     }
 }

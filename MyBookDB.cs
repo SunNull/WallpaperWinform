@@ -13,6 +13,7 @@ namespace Wallpaper
     {
         public DbSet<User> User { get { return Set<User>(); } }
         public DbSet<DiaryContent> DiaryContent { get { return Set<DiaryContent>(); } }
+        public DbSet<TimeSetting> TimeSetting { get { return Set<TimeSetting>(); } }
 
         public MyBookDB() : base("dbConn")
         {
@@ -38,6 +39,7 @@ namespace Wallpaper
         {
             modelBuilder.Entity<DiaryContent>();
             modelBuilder.Entity<User>();
+            modelBuilder.Entity<TimeSetting>();
         }
     }
 }

@@ -61,11 +61,31 @@ namespace Wallpaper.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 删_除 {
+            get {
+                object obj = ResourceManager.GetObject("删_除", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 密码修改 {
+            get {
+                object obj = ResourceManager.GetObject("密码修改", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon xifu {
+        internal static System.Drawing.Icon 我和媳妇 {
             get {
-                object obj = ResourceManager.GetObject("xifu", resourceCulture);
+                object obj = ResourceManager.GetObject("我和媳妇", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -73,9 +93,19 @@ namespace Wallpaper.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap xifu_ {
+        internal static System.Drawing.Bitmap 新建 {
             get {
-                object obj = ResourceManager.GetObject("xifu ", resourceCulture);
+                object obj = ResourceManager.GetObject("新建", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 编辑 {
+            get {
+                object obj = ResourceManager.GetObject("编辑", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

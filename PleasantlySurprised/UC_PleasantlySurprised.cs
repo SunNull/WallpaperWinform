@@ -25,6 +25,15 @@ namespace Wallpaper.PleasantlySurprised
             this.btnNew.Click += BtnNew_Click;
             this.btnUpdate.Click += BtnUpdate_Click;
             this.btnDelete.Click += BtnDelete_Click;
+            this.btnUpdatePassword.Click += BtnUpdatePassword_Click;
+        }
+
+        private void BtnUpdatePassword_Click(object sender, EventArgs e)
+        {
+            UI_UpdatePassword ui = new UI_UpdatePassword();
+            ui.user = user;
+            ui.ShowDialog();
+            ui.Dispose();
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)

@@ -49,6 +49,7 @@
             this.listBoxPictureFile = new CCWin.SkinControl.SkinListBox();
             this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
             this.tbxPassword = new System.Windows.Forms.TextBox();
+            this.btnSetting = new CCWin.SkinControl.SkinButton();
             ((System.ComponentModel.ISupportInitialize)(this.HowLongChangeWallPaper)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +58,7 @@
             // 
             this.HowLongChangeWallPaper.Location = new System.Drawing.Point(217, 29);
             this.HowLongChangeWallPaper.Maximum = new decimal(new int[] {
-            10,
+            1000000,
             0,
             0,
             0});
@@ -67,7 +68,7 @@
             0,
             0});
             this.HowLongChangeWallPaper.Name = "HowLongChangeWallPaper";
-            this.HowLongChangeWallPaper.Size = new System.Drawing.Size(120, 21);
+            this.HowLongChangeWallPaper.Size = new System.Drawing.Size(70, 21);
             this.HowLongChangeWallPaper.TabIndex = 1;
             this.HowLongChangeWallPaper.Value = new decimal(new int[] {
             1,
@@ -134,7 +135,7 @@
             this.btnBrowse.MouseBack = null;
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.NormlBack = null;
-            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowse.Size = new System.Drawing.Size(86, 23);
             this.btnBrowse.TabIndex = 5;
             this.btnBrowse.Text = "添加图片文件";
             this.btnBrowse.UseVisualStyleBackColor = false;
@@ -144,7 +145,7 @@
             this.btnApply.BackColor = System.Drawing.Color.Transparent;
             this.btnApply.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.btnApply.DownBack = null;
-            this.btnApply.Location = new System.Drawing.Point(103, 55);
+            this.btnApply.Location = new System.Drawing.Point(114, 55);
             this.btnApply.MouseBack = null;
             this.btnApply.Name = "btnApply";
             this.btnApply.NormlBack = null;
@@ -225,14 +226,29 @@
             this.tbxPassword.Size = new System.Drawing.Size(314, 21);
             this.tbxPassword.TabIndex = 8;
             // 
+            // btnSetting
+            // 
+            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetting.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnSetting.DownBack = null;
+            this.btnSetting.Location = new System.Drawing.Point(293, 29);
+            this.btnSetting.MouseBack = null;
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.NormlBack = null;
+            this.btnSetting.Size = new System.Drawing.Size(43, 23);
+            this.btnSetting.TabIndex = 5;
+            this.btnSetting.Text = "设定";
+            this.btnSetting.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 215);
+            this.ClientSize = new System.Drawing.Size(363, 215);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.skinLabel2);
             this.Controls.Add(this.listBoxPictureFile);
+            this.Controls.Add(this.btnSetting);
             this.Controls.Add(this.btnManual);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnStop);
@@ -273,6 +289,7 @@
         private CCWin.SkinControl.SkinListBox listBoxPictureFile;
         private CCWin.SkinControl.SkinLabel skinLabel2;
         private System.Windows.Forms.TextBox tbxPassword;
+        private CCWin.SkinControl.SkinButton btnSetting;
     }
 }
 

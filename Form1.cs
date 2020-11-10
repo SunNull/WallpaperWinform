@@ -68,6 +68,36 @@ namespace Wallpaper
             this.btnclose.Click += Btnclose_Click;
             this.btnNext.Click += BtnNext_Click;
             this.tbxPassword.TextChanged += TbxPassword_TextChanged;
+            this.listBoxPictureFile.DoubleClick += ListBoxPictureFile_DoubleClick;
+            this.btnSetting.Click += BtnSetting_Click;
+        }
+
+        private void BtnSetting_Click(object sender, EventArgs e)
+        {
+            using(var context=new MyBookDB())
+            {
+                var res = context.TimeSetting.ToList().OrderByDescending(t => t.DatetimeSetting).FirstOrDefault();
+                TimeSetting settings = new TimeSetting();
+                settings.DatetimeSetting = DateTime.Now;
+                settings.Time = this.HowLongChangeWallPaper.Value;
+                context.TimeSetting.Remove(res);
+                context.TimeSetting.Add(settings);
+                context.SaveChanges();
+            }
+        }
+
+        /// <summary>
+        /// 双击列表，选择当前图片作为壁纸
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ListBoxPictureFile_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.listBoxPictureFile.SelectedIndex >= 0)
+            {
+                CurrentPictureFileIndex = this.listBoxPictureFile.SelectedIndex - 1;
+                ss();
+            }
         }
 
         private void TbxPassword_TextChanged(object sender, EventArgs e)
@@ -76,10 +106,9 @@ namespace Wallpaper
                 return;
             using(var context=new MyBookDB())
             {
-                User user1 = new User();
-                if(users.Count==0)
+                users = context.User.ToList();
+                if (users.Count==0)
                 {
-                    users = context.User.ToList();
                     if(users.Count==0)
                     {
                         User user = new User();
@@ -269,6 +298,7 @@ namespace Wallpaper
 
             HaveShown = true;
             dd();
+            SetTime();
         }
         private void TimerChangeCurrentWallPaper_Tick(object sender, EventArgs e)//定时改变当前的墙纸文件
         {
@@ -450,6 +480,27 @@ namespace Wallpaper
             uc.user = user;
             uc.ShowDialog();
             uc.Dispose();
+        }
+
+        public void SetTime()
+        {
+            using(var context= new MyBookDB())
+            {
+                var timesettingd = context.TimeSetting.ToList().OrderByDescending(t => t.DatetimeSetting);
+                if(timesettingd.Count()==0)
+                {
+                    TimeSetting settings = new TimeSetting();
+                    settings.DatetimeSetting = DateTime.Now;
+                    settings.Time = this.HowLongChangeWallPaper.Value;
+                    context.TimeSetting.Add(settings);
+                    context.SaveChanges();
+                }
+                else
+                {
+                    var firsettime = timesettingd.FirstOrDefault();
+                    this.HowLongChangeWallPaper.Value = firsettime.Time;
+                }
+            }
         }
     }
 }

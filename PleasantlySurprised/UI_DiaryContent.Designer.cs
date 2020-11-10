@@ -186,6 +186,7 @@
             this.Controls.Add(this.skinMenuStrip1);
             this.MainMenuStrip = this.skinMenuStrip1;
             this.Name = "UI_DiaryContent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "日记";
             this.skinMenuStrip1.ResumeLayout(false);
             this.skinMenuStrip1.PerformLayout();

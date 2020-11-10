@@ -33,7 +33,11 @@ namespace Wallpaper.PleasantlySurprised
                 this.tbxContent.Text = DiaryContent.Content;
             }
         }
-
+        /// <summary>
+        /// 保存
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnSave_Click(object sender, EventArgs e)
         {
             if(string.IsNullOrWhiteSpace(tbxContent.Text.Trim()))
@@ -75,7 +79,11 @@ namespace Wallpaper.PleasantlySurprised
             }
             MessageBox.Show("保存成功咯！");
         }
-
+        /// <summary>
+        /// 关闭当前弹窗
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.Close();

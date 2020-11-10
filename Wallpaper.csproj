@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -51,7 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>xifu.ico</ApplicationIcon>
+    <ApplicationIcon>Nobuitifual.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>75340623628DABF8594B519DD7FA570DFEE52818</ManifestCertificateThumbprint>
@@ -63,16 +63,20 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>001.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Wallpaper.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CSkin, Version=16.1.14.3, Culture=neutral, processorArchitecture=MSIL">
@@ -121,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataEntity\DiaryContent.cs" />
+    <Compile Include="DataEntity\TimeSetting.cs" />
     <Compile Include="DataEntity\User.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -141,8 +146,20 @@
     <Compile Include="PleasantlySurprised\UI_DiaryContent.Designer.cs">
       <DependentUpon>UI_DiaryContent.cs</DependentUpon>
     </Compile>
+    <Compile Include="PleasantlySurprised\UI_UpdatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PleasantlySurprised\UI_UpdatePassword.Designer.cs">
+      <DependentUpon>UI_UpdatePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Home.Designer.cs">
+      <DependentUpon>UI_Home.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PleasantlySurprised\UI_DiaryContent.resx">
       <DependentUpon>UI_DiaryContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PleasantlySurprised\UI_UpdatePassword.resx">
+      <DependentUpon>UI_UpdatePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,7 +182,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="001.pfx" />
+    <EmbeddedResource Include="UI_Home.resx">
+      <DependentUpon>UI_Home.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Wallpaper.DataEntity.DiaryContent.datasource" />
     <None Include="Properties\Settings.settings">
@@ -174,8 +196,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Wallpaper_1_TemporaryKey.pfx" />
-    <None Include="Wallpaper_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -184,11 +204,14 @@
     <Folder Include="Microsoft\VisualBasic\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\xifu.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\xifu .jpg" />
-    <Content Include="xifu.ico" />
+    <Content Include="Nobuitifual.ico" />
+    <Content Include="Resources\Nobuitifual.ico" />
+    <Content Include="我和媳妇.ico" />
+    <None Include="Resources\新建.png" />
+    <None Include="Resources\删 除.png" />
+    <None Include="Resources\编辑 .png" />
+    <None Include="Resources\密码修改.png" />
+    <None Include="Resources\我和媳妇.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
